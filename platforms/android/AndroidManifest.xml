@@ -9,6 +9,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider android:authorities="com.kadek.onyxreceiver.provider" android:enabled="true" android:exported="true" android:name="com.onyxbeaconservice.provider.IBeaconProvider" />
+        <receiver android:name="com.cordova.ble.ContentReceiver">
+            <intent-filter>
+                <action android:name="com.cordova.ble.content" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cordova.ble.BleStateReceiver">
+            <intent-filter>
+                <action android:name="com.cordova.ble.scan" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="clientid" android:value="cd8d429b30f58c577f2bc0dbfd07d03b07de7d2f" />
+        <meta-data android:name="secret" android:value="ce7ada82d2b3917dd35520747bf6492b4f5e1d4c" />
+        <meta-data android:name="com.google.android.gms.version" android:value="8487000" tools:replace="android:value" />
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="24" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>
