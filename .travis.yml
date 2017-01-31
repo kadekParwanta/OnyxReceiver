@@ -1,0 +1,31 @@
+language: android
+
+android:
+  components:
+    - build-tools-22.0 # Specify your build tools verison
+    - android-24 # Android Platform Target
+    
+node_js:
+  - 6
+
+notifications:
+  email: false
+
+sudo: false
+
+branches:
+  only:
+  - master
+
+install:
+  - npm cache clean
+  - npm install
+  - npm install -g cordova
+  - echo y | android update sdk -u --filter android-24
+
+script:
+  - cordova prepare
+  - cordova build android --release -- --ant
+  
+release:
+  - exit 0  
