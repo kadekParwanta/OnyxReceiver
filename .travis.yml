@@ -1,12 +1,26 @@
 language: android
 
+jdk:
+  - oraclejdk8
+  
 android:
   components:
-    - build-tools-22.0 # Specify your build tools verison
-    - android-24 # Android Platform Target
+    - tools
+    - platform-tools
+    - build-tools-24.0.3
+    - android-24
+    - extra-android-m2repository
+    - extra-google-m2repository
+    - extra-android-support
+    - extra-google-google_play_services
     
-node_js:
-  - 6
+  licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+    
+env:
+  - TRAVIS_NODE_VERSION="6"
 
 notifications:
   email: false
@@ -18,14 +32,14 @@ branches:
   - master
 
 install:
-  - npm cache clean
-  - npm install
-  - npm install -g cordova
-  - echo y | android update sdk -u --filter android-24
+# Specify what and how to install
+- echo "Install stage"
+- rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+- npm install cordova
 
 script:
-  - cordova prepare
-  - cordova build android --release -- --ant
+ - echo "Starting build"
+ - cordova build android
   
 release:
   - exit 0  

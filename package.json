@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=6.0.0"
+  },
+"scripts" : {
+  "build" : "./.bin/cordova build android"
+  },
+"devDependencies": {
+    "cordova": "6.5.0"
+  }
+}
