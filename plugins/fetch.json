@@ -6,13 +6,5 @@
         },
         "is_top_level": true,
         "variables": {}
-    },
-    "com-cordova-ble": {
-        "source": {
-            "type": "local",
-            "path": "..\\..\\plugins\\com-cordova-ble"
-        },
-        "is_top_level": true,
-        "variables": {}
     }
 }

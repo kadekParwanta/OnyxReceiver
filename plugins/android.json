@@ -9,9 +9,6 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.kadek.onyxreceiver"
-        },
-        "com-cordova-ble": {
-            "PACKAGE_NAME": "com.kadek.onyxreceiver"
         }
     },
     "dependent_plugins": {}
