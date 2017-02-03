@@ -23,4 +23,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <preference name="com-cordova-ble-clientId" value="cd8d429b30f58c577f2bc0dbfd07d03b07de7d2f" />
+    <preference name="com-cordova-ble-secret" value="ce7ada82d2b3917dd35520747bf6492b4f5e1d4c" />
 </widget>

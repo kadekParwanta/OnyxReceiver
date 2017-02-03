@@ -36,7 +36,7 @@ install:
 - echo "Install stage"
 - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
 - npm install cordova
-- cordova plugin add https://github.com/kadekParwanta/com-cordova-ble --variable GMS_VERSION="8487000" --variable CLIENT_ID="value" --variable SECRET="value" --variable PACKAGE_NAME="com.kadek.onyxreceiver"
+- cordova plugin add https://github.com/kadekParwanta/cordova-plugin-onyxble --variable GMS_VERSION="8487000" --variable PACKAGE_NAME="com.kadek.onyxreceiver"
 
 script:
  - echo "Starting build"
