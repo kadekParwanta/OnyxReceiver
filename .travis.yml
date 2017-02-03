@@ -36,7 +36,7 @@ install:
 - echo "Install stage"
 - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
 - npm install cordova
-- cordova plugin add https://github.com/kadekParwanta/com-cordova-ble
+- cordova plugin add https://github.com/kadekParwanta/com-cordova-ble --variable GMS_VERSION="8487000"
 
 script:
  - echo "Starting build"
