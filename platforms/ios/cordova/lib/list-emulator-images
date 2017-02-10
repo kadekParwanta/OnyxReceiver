@@ -19,11 +19,30 @@
        under the License.
 */
 
-// Coho updates this line:
-var VERSION = "6.0.0";
+/*jshint node: true*/
 
-module.exports.version = VERSION;
+var Q = require('q'),
+    iossim = require('ios-sim'),
+    exec = require('child_process').exec,
+    check_reqs = require('./check_reqs');
 
+/**
+ * Gets list of iOS devices available for simulation
+ * @return {Promise} Promise fulfilled with list of devices available for simulation
+ */
+function listEmulatorImages () {
+    return Q.resolve(iossim.getdevicetypes());
+}
+
+
+exports.run = listEmulatorImages;
+
+// Check if module is started as separate script.
+// If so, then invoke main method and print out results.
 if (!module.parent) {
-    console.log(VERSION);
+    listEmulatorImages().then(function (names) {
+        names.forEach(function (name) {
+            console.log(name);
+        });
+    });
 }

@@ -19,11 +19,14 @@
        under the License.
 */
 
-// Coho updates this line:
-var VERSION = "6.0.0";
+var check_reqs = require('./lib/check_reqs');
 
-module.exports.version = VERSION;
-
-if (!module.parent) {
-    console.log(VERSION);
+// check for help flag
+if (['--help', '/?', '-h', 'help', '-help', '/help'].indexOf(process.argv[2]) > -1) {
+    console.log('Usage: check_reqs or node check_reqs');
+} else {
+  check_reqs.run().done(null, function (err) {
+      console.error('Failed to check requirements due to ' + err);
+      process.exit(2);
+  });
 }
