@@ -43,13 +43,21 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        this.initSDK();
+        this.initSDK("","");
     },
 
-    initSDK: function() {
+    initSDK: function(clientId, secret) {
         var ble = window.ble;
-        ble.initSDK("cd8d429b30f58c577f2bc0dbfd07d03b07de7d2f","ce7ada82d2b3917dd35520747bf6492b4f5e1d4c", 
-        function(sucess){
+        
+        ble.onWebRequested(function(info){
+            console.log(info);
+        });
+        
+        ble.didRangeBeaconsInRegion(function(beacons){
+            console.log("didRangeBeaconsInRegion " + JSON.stringify(beacons));
+        });
+        
+        ble.initSDK(clientId, secret, function(sucess){
             console.log("Success initSDK");
         }, function(err){
             console.log("failed init sdk");

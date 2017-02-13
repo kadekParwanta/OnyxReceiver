@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.kadek.onyxreceiver" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-packageName="com.kadek.onyxreceiver" id="com.kadek.onyxreceiver" ios-CFBundleIdentifier="com.mitrais.itvisiononyxreceiver" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
@@ -21,4 +21,6 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="com-cordova-ble-clientId" value="cd8d429b30f58c577f2bc0dbfd07d03b07de7d2f" />
+    <preference name="com-cordova-ble-secret" value="ce7ada82d2b3917dd35520747bf6492b4f5e1d4c" />
 </widget>
