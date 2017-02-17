@@ -43,10 +43,10 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        this.initSDK();
+        this.initSDK("","");
     },
 
-    initSDK: function() {
+    initSDK: function(clientId, secret) {
         var ble = window.ble;
         
         ble.onWebRequested(function(info){
@@ -56,12 +56,8 @@ var app = {
         ble.didRangeBeaconsInRegion(function(beacons){
             console.log("didRangeBeaconsInRegion " + JSON.stringify(beacons));
         });
-
-        ble.onError(function(err){
-            console.log("Error " + err);
-        });
         
-        ble.initSDK(function(sucess){
+        ble.initSDK(clientId, secret, function(sucess){
             console.log("Success initSDK");
         }, function(err){
             console.log("failed init sdk");

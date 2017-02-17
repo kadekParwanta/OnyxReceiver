@@ -4,51 +4,16 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"Ble\"><param name=\"ios-package\" value=\"Ble\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "*-Info.plist": {
-                "parents": {
-                    "NSLocationAlwaysUsageDescription": [
-                        {
-                            "xml": "<string>SampleApp requires location services to detect beacons around you</string>",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.kadek.onyxreceiver"
-        },
-        "com-cordova-ble": {
-            "PACKAGE_NAME": "com.kadek.onyxreceiver",
-            "GMS_VERSION": "8487000"
         }
     },
     "dependent_plugins": {},
-    "modules": [
-        {
-            "file": "plugins/com-cordova-ble/www/ble.js",
-            "id": "com-cordova-ble.ble",
-            "pluginId": "com-cordova-ble",
-            "clobbers": [
-                "ble"
-            ]
-        }
-    ],
+    "modules": [],
     "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.3.2-dev",
-        "com-cordova-ble": "2.0.1-dev"
+        "cordova-plugin-whitelist": "1.3.2-dev"
     }
 }

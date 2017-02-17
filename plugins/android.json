@@ -9,10 +9,6 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.kadek.onyxreceiver"
-        },
-        "com-cordova-ble": {
-            "PACKAGE_NAME": "com.kadek.onyxreceiver",
-            "GMS_VERSION": "8487000"
         }
     },
     "dependent_plugins": {}

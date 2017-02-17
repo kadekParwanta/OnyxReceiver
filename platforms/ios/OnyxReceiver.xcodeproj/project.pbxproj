@@ -16,23 +16,6 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		88994895C3654C43ADAA0B2C /* Ble.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E3F4A3F5594ED79C42D993 /* Ble.m */; };
-		F11A08FD468448F6B684D246 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D2E6E44264FF8B5FE8C5B /* AFHTTPSessionManager.m */; };
-		4B9F4A633C024F5CBC0A07C2 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FAB44124294B8087D63A96 /* AFNetworkReachabilityManager.m */; };
-		98623F28014C4C05BF4C5910 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B194C0D2AE44CEDA289D956 /* AFSecurityPolicy.m */; };
-		EF1A12FF177140C68CC528B9 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B90A0794453A437EBDFF3D78 /* AFURLRequestSerialization.m */; };
-		1B6FC248EFDC455588EA7B53 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B676519C53C4D658740B2BC /* AFURLResponseSerialization.m */; };
-		18BDBFB853F947E29D6F13C4 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D63077BCF1468EB4107866 /* AFURLSessionManager.m */; };
-		44BE6C4DEEBE47EC9C003C84 /* AFNetworkActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B8357E6EB6784905AE2CEA2C /* AFNetworkActivityLogger.m */; };
-		D32CE310F62B4C2D80EED884 /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 135F61FADB074CD5815329A1 /* AFHTTPRequestSerializer+OAuth2.m */; };
-		C2AB9617DA144D5B8FF86934 /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0ECC45EE77C4D9AA03D93BB /* AFOAuth2Manager.m */; };
-		4B50862CC83645B091E0DE9F /* AFOAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CF9850EAA4BB2B056FD2F /* AFOAuthCredential.m */; };
-		EC2782235E22402FAB31D690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DD0CAA8E249B99BFF3608 /* Foundation.framework */; };
-		05FAFE538D334988BF824F67 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CB6E5E87324A95B1A8A090 /* SystemConfiguration.framework */; };
-		E5C909BF0F304AFDA8F1D9D4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6446FAB0E315402FBCD24948 /* Security.framework */; };
-		86A167E0AD594BDCA54B212E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60F45E706C44212872C5874 /* CoreBluetooth.framework */; };
-		0097F987A4DD473E9DA1ABB0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4A3B4EB554B2BA1BE38EA /* CoreLocation.framework */; };
-		387275F3B7704C25B87F07E2 /* OnyxBeaconLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4807BD3260B1476BA708657D /* OnyxBeaconLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,35 +56,6 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "OnyxReceiver/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		B1E3F4A3F5594ED79C42D993 /* Ble.m */ = {isa = PBXFileReference; name = "Ble.m"; path = "com-cordova-ble/Ble.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		2B2D2E6E44264FF8B5FE8C5B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; name = "AFHTTPSessionManager.m"; path = "com-cordova-ble/AFHTTPSessionManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		87FAB44124294B8087D63A96 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; name = "AFNetworkReachabilityManager.m"; path = "com-cordova-ble/AFNetworkReachabilityManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		1B194C0D2AE44CEDA289D956 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; name = "AFSecurityPolicy.m"; path = "com-cordova-ble/AFSecurityPolicy.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		B90A0794453A437EBDFF3D78 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; name = "AFURLRequestSerialization.m"; path = "com-cordova-ble/AFURLRequestSerialization.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		3B676519C53C4D658740B2BC /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; name = "AFURLResponseSerialization.m"; path = "com-cordova-ble/AFURLResponseSerialization.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		E1D63077BCF1468EB4107866 /* AFURLSessionManager.m */ = {isa = PBXFileReference; name = "AFURLSessionManager.m"; path = "com-cordova-ble/AFURLSessionManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		B8357E6EB6784905AE2CEA2C /* AFNetworkActivityLogger.m */ = {isa = PBXFileReference; name = "AFNetworkActivityLogger.m"; path = "com-cordova-ble/AFNetworkActivityLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		135F61FADB074CD5815329A1 /* AFHTTPRequestSerializer+OAuth2.m */ = {isa = PBXFileReference; name = "AFHTTPRequestSerializer+OAuth2.m"; path = "com-cordova-ble/AFHTTPRequestSerializer+OAuth2.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		B0ECC45EE77C4D9AA03D93BB /* AFOAuth2Manager.m */ = {isa = PBXFileReference; name = "AFOAuth2Manager.m"; path = "com-cordova-ble/AFOAuth2Manager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		7B2CF9850EAA4BB2B056FD2F /* AFOAuthCredential.m */ = {isa = PBXFileReference; name = "AFOAuthCredential.m"; path = "com-cordova-ble/AFOAuthCredential.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		7F25D996307E4E929D918F47 /* Ble.h */ = {isa = PBXFileReference; name = "Ble.h"; path = "com-cordova-ble/Ble.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		AC419A3B01254A9DBC7FA18A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; name = "AFHTTPSessionManager.h"; path = "com-cordova-ble/AFHTTPSessionManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		224CC4704B854642942DB10F /* AFNetworking.h */ = {isa = PBXFileReference; name = "AFNetworking.h"; path = "com-cordova-ble/AFNetworking.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		196FEC40A40948499937E435 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; name = "AFNetworkReachabilityManager.h"; path = "com-cordova-ble/AFNetworkReachabilityManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		87C4A2918C8D4077A62A6444 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; name = "AFSecurityPolicy.h"; path = "com-cordova-ble/AFSecurityPolicy.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		63CAF336811045ABA4A04A23 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; name = "AFURLRequestSerialization.h"; path = "com-cordova-ble/AFURLRequestSerialization.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		F4E14B5109714F718B17AE17 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; name = "AFURLResponseSerialization.h"; path = "com-cordova-ble/AFURLResponseSerialization.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		12C85285317041E19DE2210E /* AFURLSessionManager.h */ = {isa = PBXFileReference; name = "AFURLSessionManager.h"; path = "com-cordova-ble/AFURLSessionManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		43618029C0644896A3C41EB5 /* AFNetworkActivityLogger.h */ = {isa = PBXFileReference; name = "AFNetworkActivityLogger.h"; path = "com-cordova-ble/AFNetworkActivityLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		33A1D30F7637420582E9C7E3 /* AFHTTPRequestSerializer+OAuth2.h */ = {isa = PBXFileReference; name = "AFHTTPRequestSerializer+OAuth2.h"; path = "com-cordova-ble/AFHTTPRequestSerializer+OAuth2.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		99C9459D6BD345CD96D4D3AB /* AFOAuth2Manager.h */ = {isa = PBXFileReference; name = "AFOAuth2Manager.h"; path = "com-cordova-ble/AFOAuth2Manager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		18F050D4EF4A4173B3F60571 /* AFOAuthCredential.h */ = {isa = PBXFileReference; name = "AFOAuthCredential.h"; path = "com-cordova-ble/AFOAuthCredential.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		A53DD0CAA8E249B99BFF3608 /* Foundation.framework */ = {isa = PBXFileReference; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		F2CB6E5E87324A95B1A8A090 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		6446FAB0E315402FBCD24948 /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		F60F45E706C44212872C5874 /* CoreBluetooth.framework */ = {isa = PBXFileReference; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		04B4A3B4EB554B2BA1BE38EA /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		4807BD3260B1476BA708657D /* OnyxBeaconLib.framework */ = {isa = PBXFileReference; name = "OnyxBeaconLib.framework"; path = "OnyxReceiver/Plugins/com-cordova-ble/OnyxBeaconLib.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				EC2782235E22402FAB31D690 /* Foundation.framework in Frameworks */,
-				05FAFE538D334988BF824F67 /* SystemConfiguration.framework in Frameworks */,
-				E5C909BF0F304AFDA8F1D9D4 /* Security.framework in Frameworks */,
-				86A167E0AD594BDCA54B212E /* CoreBluetooth.framework in Frameworks */,
-				0097F987A4DD473E9DA1ABB0 /* CoreLocation.framework in Frameworks */,
-				387275F3B7704C25B87F07E2 /* OnyxBeaconLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,12 +134,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A53DD0CAA8E249B99BFF3608 /* Foundation.framework */,
-				F2CB6E5E87324A95B1A8A090 /* SystemConfiguration.framework */,
-				6446FAB0E315402FBCD24948 /* Security.framework */,
-				F60F45E706C44212872C5874 /* CoreBluetooth.framework */,
-				04B4A3B4EB554B2BA1BE38EA /* CoreLocation.framework */,
-				4807BD3260B1476BA708657D /* OnyxBeaconLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,29 +159,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				B1E3F4A3F5594ED79C42D993 /* Ble.m */,
-				2B2D2E6E44264FF8B5FE8C5B /* AFHTTPSessionManager.m */,
-				87FAB44124294B8087D63A96 /* AFNetworkReachabilityManager.m */,
-				1B194C0D2AE44CEDA289D956 /* AFSecurityPolicy.m */,
-				B90A0794453A437EBDFF3D78 /* AFURLRequestSerialization.m */,
-				3B676519C53C4D658740B2BC /* AFURLResponseSerialization.m */,
-				E1D63077BCF1468EB4107866 /* AFURLSessionManager.m */,
-				B8357E6EB6784905AE2CEA2C /* AFNetworkActivityLogger.m */,
-				135F61FADB074CD5815329A1 /* AFHTTPRequestSerializer+OAuth2.m */,
-				B0ECC45EE77C4D9AA03D93BB /* AFOAuth2Manager.m */,
-				7B2CF9850EAA4BB2B056FD2F /* AFOAuthCredential.m */,
-				7F25D996307E4E929D918F47 /* Ble.h */,
-				AC419A3B01254A9DBC7FA18A /* AFHTTPSessionManager.h */,
-				224CC4704B854642942DB10F /* AFNetworking.h */,
-				196FEC40A40948499937E435 /* AFNetworkReachabilityManager.h */,
-				87C4A2918C8D4077A62A6444 /* AFSecurityPolicy.h */,
-				63CAF336811045ABA4A04A23 /* AFURLRequestSerialization.h */,
-				F4E14B5109714F718B17AE17 /* AFURLResponseSerialization.h */,
-				12C85285317041E19DE2210E /* AFURLSessionManager.h */,
-				43618029C0644896A3C41EB5 /* AFNetworkActivityLogger.h */,
-				33A1D30F7637420582E9C7E3 /* AFHTTPRequestSerializer+OAuth2.h */,
-				99C9459D6BD345CD96D4D3AB /* AFOAuth2Manager.h */,
-				18F050D4EF4A4173B3F60571 /* AFOAuthCredential.h */,
 			);
 			name = Plugins;
 			path = "OnyxReceiver/Plugins";
@@ -352,17 +271,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				88994895C3654C43ADAA0B2C /* Ble.m in Sources */,
-				F11A08FD468448F6B684D246 /* AFHTTPSessionManager.m in Sources */,
-				4B9F4A633C024F5CBC0A07C2 /* AFNetworkReachabilityManager.m in Sources */,
-				98623F28014C4C05BF4C5910 /* AFSecurityPolicy.m in Sources */,
-				EF1A12FF177140C68CC528B9 /* AFURLRequestSerialization.m in Sources */,
-				1B6FC248EFDC455588EA7B53 /* AFURLResponseSerialization.m in Sources */,
-				18BDBFB853F947E29D6F13C4 /* AFURLSessionManager.m in Sources */,
-				44BE6C4DEEBE47EC9C003C84 /* AFNetworkActivityLogger.m in Sources */,
-				D32CE310F62B4C2D80EED884 /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
-				C2AB9617DA144D5B8FF86934 /* AFOAuth2Manager.m in Sources */,
-				4B50862CC83645B091E0DE9F /* AFOAuthCredential.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +306,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "OnyxReceiver";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"OnyxReceiver/Plugins/com-cordova-ble\"",
-				);
 			};
 			name = Debug;
 		};
@@ -424,10 +328,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				PRODUCT_NAME = "OnyxReceiver";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"OnyxReceiver/Plugins/com-cordova-ble\"",
-				);
 			};
 			name = Release;
 		};
