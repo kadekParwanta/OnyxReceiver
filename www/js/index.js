@@ -18,23 +18,23 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
-        // var btnInitSdk = document.getElementById("btnInitSdk");
-        // btnInitSdk.addEventListener('click', this.initSDK(), false);
+        var btnInitSdk = document.getElementById("btnInitSdk");
+        btnInitSdk.addEventListener('click', this.initSDK.bind(this), false);
     },
 
     // deviceready Event Handler
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         this.receivedEvent('deviceready');
     },
 
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -43,27 +43,58 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        this.initSDK();
     },
 
-    initSDK: function() {
+    initSDK: function () {
         var ble = window.ble;
-        
-        ble.onWebRequested(function(info){
+
+        var i = 0;
+
+        ble.onWebRequested(function (info) {
             console.log(info);
         });
-        
-        ble.didRangeBeaconsInRegion(function(beacons){
-            console.log("didRangeBeaconsInRegion " + JSON.stringify(beacons));
+
+        ble.didRangeBeaconsInRegion(function (beacons) {
+            console.log("didRangeBeaconsInRegion " + JSON.stringify(beacons) + " i= " + i);
+            if (i === 0) {
+                console.log("buzzBeacon");
+                ble.buzzBeacon(function (s) {
+                    console.log(s);
+                }, function (f) {
+                    console.log("buzzBeacon error: " + f);
+                }, JSON.stringify(beacons[0]));
+                i++;
+            }
         });
 
-        ble.onError(function(err){
-            console.log("onError " + err);
+        ble.onError(function (error) {
+            console.log("error " + error);
+        });
+
+        ble.onCouponReceived(function (coupon) {
+            console.log("onCouponReceived " + JSON.stringify(coupon));
+            ble.showCoupon(function (s) {
+                console.log(s);
+            }, function (f) {
+                console.log(f);
+            }, JSON.stringify(coupon[0]))
+        });
+
+        ble.onTagsReceived(function (tags) {
+            console.log("onTagsReceived " + JSON.stringify(tags));
         })
-        
-        ble.initSDK(function(sucess){
+
+        ble.onDeliveredCouponsReceived(function (coupons) {
+            console.log("onDeliveredCouponsReceived " + coupons);
+        });
+
+        ble.initSDK(function (sucess) {
             console.log("Success initSDK");
-        }, function(err){
+            ble.getDeliveredCoupons();
+            ble.getTags(function (c) {
+                console.log(c);
+            });
+        }, function (err) {
             console.log("failed init sdk");
         })
     }
